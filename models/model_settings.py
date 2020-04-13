@@ -17,8 +17,10 @@ import os
 BASE_DIR = os.path.dirname(os.path.relpath(__file__))
 
 MODEL_DIR = os.path.join(BASE_DIR, 'pretrain')
-PTH_MODEL_DIR = 'pytorch'
-TF_MODEL_DIR = 'tensorflow'
+#PTH_MODEL_DIR = 'pytorch'
+#TF_MODEL_DIR = 'tensorflow'
+PTH_MODEL_DIR = ''
+TF_MODEL_DIR = ''
 
 if not os.path.exists(os.path.join(MODEL_DIR, PTH_MODEL_DIR)):
   os.makedirs(os.path.join(MODEL_DIR, PTH_MODEL_DIR))

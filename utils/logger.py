@@ -37,6 +37,7 @@ def setup_logger(work_dir=None, logfile_name='log.txt', logger_name='logger'):
 
   logger = logging.getLogger(logger_name)
   if logger.hasHandlers():  # Already existed
+    return logger
     raise SystemExit(f'Logger name `{logger_name}` has already been set up!\n'
                      f'Please use another name, or otherwise the messages '
                      f'may be mixed between these two loggers.')
